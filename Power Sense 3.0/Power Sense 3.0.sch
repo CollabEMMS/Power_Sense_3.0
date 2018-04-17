@@ -313,7 +313,7 @@ Text Label 10100 3300 0    60   ~ 0
 SDO
 Text Label 6300 3050 0    60   ~ 0
 SDO
-Text Label 10100 2400 0    60   ~ 0
+Text Label 10100 3200 0    60   ~ 0
 SDI
 $Comp
 L R R19
@@ -351,12 +351,12 @@ $EndComp
 $Comp
 L R R18
 U 1 1 5AB08AF1
-P 9950 2400
-F 0 "R18" V 9900 2250 50  0000 C CNN
-F 1 "1k" V 9950 2400 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9880 2400 50  0001 C CNN
-F 3 "" H 9950 2400 50  0001 C CNN
-	1    9950 2400
+P 9950 3200
+F 0 "R18" V 9900 3050 50  0000 C CNN
+F 1 "1k" V 9950 3200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9880 3200 50  0001 C CNN
+F 3 "" H 9950 3200 50  0001 C CNN
+	1    9950 3200
 	0    1    1    0   
 $EndComp
 Text Label 6300 2650 0    60   ~ 0
@@ -846,9 +846,8 @@ Wire Wire Line
 	6100 3450 6250 3450
 Text Label 6250 3450 0    60   ~ 0
 GND
-NoConn ~ 9700 3200
 Wire Wire Line
-	9700 2400 9800 2400
+	9700 3200 9800 3200
 NoConn ~ 6600 5500
 $Comp
 L R R15
@@ -965,4 +964,5 @@ F 3 "" H 1850 4750 50  0001 C CNN
 $EndComp
 NoConn ~ 1450 4750
 NoConn ~ 2250 4750
+NoConn ~ 9700 2400
 $EndSCHEMATC
