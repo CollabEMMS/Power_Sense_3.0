@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:microchip_pic18mcu
-LIBS:mylib
+EESchema Schematic File Version 4
 LIBS:Power Sense 3.0-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCP3909 IC1
+L Power-Sense-3.0-rescue:MCP3909 IC1
 U 1 1 5AA88A9C
 P 5450 3250
 F 0 "IC1" H 5450 2550 60  0000 C CNN
@@ -57,7 +26,7 @@ F 3 "" H 5300 3250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5AB00A66
 P 1050 5650
 F 0 "#PWR01" H 1050 5400 50  0001 C CNN
@@ -70,7 +39,7 @@ $EndComp
 Text Label 1050 5600 0    60   ~ 0
 GND
 $Comp
-L C C6
+L Device:C C6
 U 1 1 5AB00AED
 P 4300 2400
 F 0 "C6" H 4325 2500 50  0000 L CNN
@@ -81,7 +50,7 @@ F 3 "" H 4300 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R11
+L Device:R R11
 U 1 1 5AB00B6C
 P 4150 2100
 F 0 "R11" V 4230 2100 50  0000 C CNN
@@ -96,7 +65,7 @@ Text Label 4150 1850 0    60   ~ 0
 Text Label 4600 2400 2    60   ~ 0
 GND
 $Comp
-L C C1
+L Device:C C1
 U 1 1 5AB012A4
 P 3200 2750
 F 0 "C1" H 3225 2850 50  0000 L CNN
@@ -107,7 +76,7 @@ F 3 "" H 3200 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L Device:C C2
 U 1 1 5AB012EC
 P 3200 3650
 F 0 "C2" H 3225 3750 50  0000 L CNN
@@ -118,7 +87,7 @@ F 3 "" H 3200 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R6
+L Device:R R6
 U 1 1 5AB01503
 P 2950 2900
 F 0 "R6" V 3030 2900 50  0000 C CNN
@@ -129,7 +98,7 @@ F 3 "" H 2950 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R7
+L Device:R R7
 U 1 1 5AB0158F
 P 2950 3500
 F 0 "R7" V 3030 3500 50  0000 C CNN
@@ -140,7 +109,7 @@ F 3 "" H 2950 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 5AB016B8
 P 2000 3050
 F 0 "R2" V 2080 3050 50  0000 C CNN
@@ -151,7 +120,7 @@ F 3 "" H 2000 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 5AB01713
 P 2000 3350
 F 0 "R3" V 2080 3350 50  0000 C CNN
@@ -162,7 +131,7 @@ F 3 "" H 2000 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5AB0199B
 P 2200 3200
 F 0 "#PWR02" H 2200 2950 50  0001 C CNN
@@ -173,7 +142,7 @@ F 3 "" H 2200 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PIC18F25K20_I/SS U1
+L Power-Sense-3.0-rescue:PIC18F25K20_I_SS U1
 U 1 1 5AB01EAD
 P 8900 2700
 F 0 "U1" H 8200 3650 50  0000 L CNN
@@ -183,56 +152,12 @@ F 3 "" H 8900 2650 50  0001 C CNN
 	1    8900 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R1
-U 1 1 5AB02A65
-P 1300 4550
-F 0 "R1" V 1380 4550 50  0000 C CNN
-F 1 "150k 1W" V 1300 4550 28  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 1230 4550 50  0001 C CNN
-F 3 "" H 1300 4550 50  0001 C CNN
-	1    1300 4550
-	0    1    1    0   
-$EndComp
 Text Label 1050 4550 0    60   ~ 0
 H
 Text Label 1050 4950 0    60   ~ 0
 N
 $Comp
-L R R4
-U 1 1 5AB02E9F
-P 2500 4600
-F 0 "R4" V 2580 4600 50  0000 C CNN
-F 1 "200 1%" V 2500 4600 33  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2430 4600 50  0001 C CNN
-F 3 "" H 2500 4600 50  0001 C CNN
-	1    2500 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R5
-U 1 1 5AB02EFD
-P 2500 4900
-F 0 "R5" V 2580 4900 50  0000 C CNN
-F 1 "200 1%" V 2500 4900 33  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2430 4900 50  0001 C CNN
-F 3 "" H 2500 4900 50  0001 C CNN
-	1    2500 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 5AB02F42
-P 2650 4750
-F 0 "#PWR03" H 2650 4500 50  0001 C CNN
-F 1 "GND" H 2650 4600 50  0000 C CNN
-F 2 "" H 2650 4750 50  0001 C CNN
-F 3 "" H 2650 4750 50  0001 C CNN
-	1    2650 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R8
+L Device:R R8
 U 1 1 5AB02F80
 P 2950 4450
 F 0 "R8" V 3030 4450 50  0000 C CNN
@@ -243,7 +168,7 @@ F 3 "" H 2950 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R9
+L Device:R R9
 U 1 1 5AB02FDE
 P 2950 5050
 F 0 "R9" V 3030 5050 50  0000 C CNN
@@ -254,7 +179,7 @@ F 3 "" H 2950 5050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C3
+L Device:C C3
 U 1 1 5AB03074
 P 3200 4300
 F 0 "C3" H 3225 4400 50  0000 L CNN
@@ -265,7 +190,7 @@ F 3 "" H 3200 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Device:C C4
 U 1 1 5AB030D7
 P 3200 5200
 F 0 "C4" H 3225 5300 50  0000 L CNN
@@ -286,7 +211,7 @@ GND
 Text Label 10100 3400 0    60   ~ 0
 MCLR
 $Comp
-L C C5
+L Device:C C5
 U 1 1 5AB052AC
 P 3900 3700
 F 0 "C5" H 3925 3800 50  0000 L CNN
@@ -315,7 +240,7 @@ SDO
 Text Label 10100 3200 0    60   ~ 0
 SDI
 $Comp
-L R R19
+L Device:R R19
 U 1 1 5AB0893E
 P 9950 3300
 F 0 "R19" V 9900 3150 50  0000 C CNN
@@ -326,7 +251,7 @@ F 3 "" H 9950 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R17
+L Device:R R17
 U 1 1 5AB089B4
 P 9950 3100
 F 0 "R17" V 9900 2950 50  0000 C CNN
@@ -337,18 +262,7 @@ F 3 "" H 9950 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R20
-U 1 1 5AB08A8E
-P 9950 3400
-F 0 "R20" V 9900 3250 50  0000 C CNN
-F 1 "1k" V 9950 3400 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9880 3400 50  0001 C CNN
-F 3 "" H 9950 3400 50  0001 C CNN
-	1    9950 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L R R18
+L Device:R R18
 U 1 1 5AB08AF1
 P 9950 3200
 F 0 "R18" V 9900 3050 50  0000 C CNN
@@ -373,7 +287,7 @@ Fo1toPIC
 NoConn ~ 6100 3150
 NoConn ~ 4800 2950
 $Comp
-L C C9
+L Device:C C9
 U 1 1 5AB0ED79
 P 7350 3450
 F 0 "C9" H 7375 3550 50  0000 L CNN
@@ -384,7 +298,7 @@ F 3 "" H 7350 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C8
+L Device:C C8
 U 1 1 5AB0EE11
 P 7350 3150
 F 0 "C8" H 7375 3250 50  0000 L CNN
@@ -395,7 +309,7 @@ F 3 "" H 7350 3150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Crystal Y1
+L Device:Crystal Y1
 U 1 1 5AB0F475
 P 7000 3300
 F 0 "Y1" H 7000 3450 50  0000 C CNN
@@ -406,7 +320,7 @@ F 3 "" H 7000 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_01x02_Male J1
+L Power-Sense-3.0-rescue:Conn_01x02_Male J1
 U 1 1 5AB1B19B
 P 1650 5850
 F 0 "J1" H 1650 5950 50  0000 C CNN
@@ -421,7 +335,7 @@ H
 Text Label 1750 5450 0    60   ~ 0
 N
 $Comp
-L Conn_01x05_Male J2
+L Power-Sense-3.0-rescue:Conn_01x05_Male J2
 U 1 1 5AB1EF56
 P 4850 5700
 F 0 "J2" H 4850 6000 50  0000 C CNN
@@ -436,7 +350,7 @@ Text Label 4650 5300 1    60   ~ 0
 Text Label 7850 2600 2    60   ~ 0
 5V_PULL_UP
 $Comp
-L R R13
+L Device:R R13
 U 1 1 5AB21F8B
 P 7650 2750
 F 0 "R13" V 7730 2750 50  0000 C CNN
@@ -461,7 +375,7 @@ PROG_DI
 Text Label 10100 2500 0    60   ~ 0
 PROG_DI
 $Comp
-L Conn_01x07_Male J3
+L Power-Sense-3.0-rescue:Conn_01x07_Male J3
 U 1 1 5AB275FC
 P 6300 5700
 F 0 "J3" H 6300 6100 50  0000 C CNN
@@ -496,7 +410,7 @@ Text Label 6600 5300 1    60   ~ 0
 Text Label 8800 3900 3    60   ~ 0
 GND
 $Comp
-L C C7
+L Device:C C7
 U 1 1 5AB2C355
 P 6900 5400
 F 0 "C7" H 6925 5500 50  0000 L CNN
@@ -507,7 +421,7 @@ F 3 "" H 6900 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D1
+L Device:LED D1
 U 1 1 5AB2D6B3
 P 2800 5700
 F 0 "D1" H 2800 5800 50  0000 C CNN
@@ -520,7 +434,7 @@ $EndComp
 Text Label 2450 5700 2    60   ~ 0
 GND
 $Comp
-L R R10
+L Device:R R10
 U 1 1 5AB2E835
 P 3200 5700
 F 0 "R10" V 3280 5700 50  0000 C CNN
@@ -537,7 +451,7 @@ LED_TO_25
 Text Label 7650 3300 0    60   ~ 0
 GND
 $Comp
-L C C10
+L Device:C C10
 U 1 1 5AB37B19
 P 9200 1600
 F 0 "C10" V 9250 1650 50  0000 L CNN
@@ -548,7 +462,7 @@ F 3 "" H 9200 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R14
+L Device:R R14
 U 1 1 5AB38E7D
 P 8800 1350
 F 0 "R14" V 8880 1350 50  0000 C CNN
@@ -571,7 +485,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 2650 4800 2650
 Wire Wire Line
-	4150 2250 4150 2850
+	4150 2250 4150 2400
 Connection ~ 4150 2400
 Wire Wire Line
 	4150 1950 4150 1850
@@ -584,7 +498,7 @@ Wire Wire Line
 Connection ~ 3200 2900
 Connection ~ 3200 3500
 Wire Wire Line
-	1800 3500 2800 3500
+	1800 3500 2000 3500
 Wire Wire Line
 	2000 3200 2200 3200
 Wire Wire Line
@@ -593,7 +507,7 @@ Connection ~ 2000 3500
 Wire Wire Line
 	1800 3000 1800 2900
 Wire Wire Line
-	1800 2900 2800 2900
+	1800 2900 2000 2900
 Connection ~ 2000 2900
 Wire Wire Line
 	3200 3050 4800 3050
@@ -604,29 +518,11 @@ Wire Wire Line
 Wire Wire Line
 	3200 3150 4800 3150
 Wire Wire Line
-	1450 4950 1050 4950
-Wire Wire Line
 	1150 4550 1050 4550
 Wire Wire Line
-	2250 4950 2300 4950
+	3100 4450 3200 4450
 Wire Wire Line
-	2300 4950 2300 5050
-Wire Wire Line
-	2300 5050 2800 5050
-Wire Wire Line
-	2300 4450 2800 4450
-Wire Wire Line
-	2300 4450 2300 4550
-Wire Wire Line
-	2300 4550 2250 4550
-Wire Wire Line
-	2500 4750 2650 4750
-Connection ~ 2500 4450
-Wire Wire Line
-	3100 4450 3650 4450
-Connection ~ 2500 5050
-Wire Wire Line
-	3100 5050 3750 5050
+	3100 5050 3200 5050
 Wire Wire Line
 	3650 3250 4800 3250
 Wire Wire Line
@@ -638,13 +534,9 @@ Wire Wire Line
 Connection ~ 3200 5050
 Connection ~ 3200 4450
 Wire Wire Line
-	3200 4150 3200 4150
-Wire Wire Line
 	3200 4150 3200 4050
 Wire Wire Line
 	3200 3800 3200 3900
-Wire Wire Line
-	9700 3400 9800 3400
 Wire Wire Line
 	3900 3550 4800 3550
 Wire Wire Line
@@ -686,7 +578,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 3350 6500 3450
 Wire Wire Line
-	6500 3450 7200 3450
+	6500 3450 7000 3450
 Connection ~ 7000 3150
 Connection ~ 7000 3450
 Wire Wire Line
@@ -704,7 +596,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 5500 5050 5300
 Wire Wire Line
-	7850 2600 8100 2600
+	7850 2600 7950 2600
 Wire Wire Line
 	7950 2600 7950 2750
 Wire Wire Line
@@ -725,21 +617,21 @@ Wire Wire Line
 Wire Wire Line
 	6300 5500 6300 5300
 Wire Wire Line
-	6400 5300 6400 5500
+	6400 5300 6400 5400
 Wire Wire Line
-	6500 5300 6500 5500
+	6500 5300 6500 5350
 Wire Wire Line
 	6600 5500 6600 5300
 Wire Wire Line
-	9700 2200 9900 2200
+	9700 2200 9750 2200
 Wire Wire Line
-	8800 3700 8800 3900
+	8800 3700 8800 3800
 Wire Wire Line
-	8800 1500 8800 1700
+	8800 1500 8800 1600
 Wire Wire Line
 	9700 1900 9900 1900
 Wire Wire Line
-	9700 2000 9900 2000
+	9700 2000 9850 2000
 Wire Wire Line
 	9700 2100 9900 2100
 Wire Wire Line
@@ -774,9 +666,7 @@ Wire Wire Line
 	4800 2750 4150 2750
 Connection ~ 4150 2750
 Wire Wire Line
-	7600 3150 7600 3450
-Connection ~ 7600 3150
-Connection ~ 7600 3450
+	7600 3150 7600 3300
 Wire Wire Line
 	7600 3450 7500 3450
 Wire Wire Line
@@ -795,7 +685,7 @@ Wire Wire Line
 	9850 1500 9850 2000
 Connection ~ 9850 2000
 $Comp
-L R R16
+L Device:R R16
 U 1 1 5AB4153A
 P 9850 1350
 F 0 "R16" V 9750 1350 50  0000 C CNN
@@ -813,11 +703,11 @@ Wire Wire Line
 	9750 1650 9750 2200
 Connection ~ 9750 2200
 Wire Wire Line
-	6500 3150 7200 3150
+	6500 3150 7000 3150
 Text Label 6300 3650 0    60   ~ 0
 MCP_CS_TO_PIC
 $Comp
-L R R21
+L Device:R R21
 U 1 1 5AB4F035
 P 9950 3500
 F 0 "R21" V 9900 3350 50  0000 C CNN
@@ -849,7 +739,7 @@ Wire Wire Line
 	9700 3200 9800 3200
 NoConn ~ 6600 5500
 $Comp
-L R R15
+L Device:R R15
 U 1 1 5ABC818E
 P 9750 1500
 F 0 "R15" V 9650 1500 50  0000 C CNN
@@ -864,7 +754,7 @@ Wire Wire Line
 Text Label 9750 1100 2    60   ~ 0
 +5V
 $Comp
-L LED D2
+L Device:LED D2
 U 1 1 5ABCA984
 P 2800 6200
 F 0 "D2" H 2800 6300 50  0000 C CNN
@@ -877,7 +767,7 @@ $EndComp
 Text Label 2450 6200 2    60   ~ 0
 GND
 $Comp
-L R R22
+L Device:R R22
 U 1 1 5ABCA98B
 P 3200 6200
 F 0 "R22" V 3280 6200 50  0000 C CNN
@@ -894,7 +784,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 6200 3350 6200
 $Comp
-L LED D3
+L Device:LED D3
 U 1 1 5ABCAAB3
 P 2800 6600
 F 0 "D3" H 2800 6700 50  0000 C CNN
@@ -907,7 +797,7 @@ $EndComp
 Text Label 2450 6600 2    60   ~ 0
 GND
 $Comp
-L R R23
+L Device:R R23
 U 1 1 5ABCAABA
 P 3200 6600
 F 0 "R23" V 3280 6600 50  0000 C CNN
@@ -940,7 +830,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 3400 1700 3400
 $Comp
-L AC1030 T1
+L Power-Sense-3.0-rescue:AC1030 T1
 U 1 1 5ABD54D0
 P 1400 3600
 F 0 "T1" H 1400 4300 60  0000 C CNN
@@ -950,18 +840,43 @@ F 3 "" H 1400 3600 60  0001 C CNN
 	1    1400 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Murata_782485_55C T2
-U 1 1 5ABCA73E
-P 1850 4750
-F 0 "T2" H 1850 5000 50  0000 C CNN
-F 1 "Murata_782485_55C" H 1850 4450 50  0000 C CNN
-F 2 "EMMS_FP:Murata_782485_Series" H 1850 4750 50  0001 C CNN
-F 3 "" H 1850 4750 50  0001 C CNN
-	1    1850 4750
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1450 4750
-NoConn ~ 2250 4750
 NoConn ~ 9700 2400
+Wire Wire Line
+	4150 2400 4150 2650
+Wire Wire Line
+	2000 3500 2800 3500
+Wire Wire Line
+	2000 2900 2800 2900
+Wire Wire Line
+	3200 5050 3750 5050
+Wire Wire Line
+	3200 4450 3650 4450
+Wire Wire Line
+	7000 3150 7200 3150
+Wire Wire Line
+	7000 3450 7200 3450
+Wire Wire Line
+	7950 2600 8100 2600
+Wire Wire Line
+	6500 5350 6500 5500
+Wire Wire Line
+	6400 5400 6400 5500
+Wire Wire Line
+	8800 3800 8800 3900
+Wire Wire Line
+	4150 2650 4150 2750
+Wire Wire Line
+	4150 2750 4150 2850
+Wire Wire Line
+	7600 3300 7600 3450
+Wire Wire Line
+	8800 1600 8800 1700
+Wire Wire Line
+	9850 2000 9900 2000
+Wire Wire Line
+	9750 2200 9900 2200
+Wire Wire Line
+	1050 4950 1150 4950
+Wire Wire Line
+	9700 3400 10100 3400
 $EndSCHEMATC

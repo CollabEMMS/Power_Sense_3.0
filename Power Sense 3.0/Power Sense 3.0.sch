@@ -879,4 +879,15 @@ Wire Wire Line
 	1050 4950 1150 4950
 Wire Wire Line
 	9700 3400 10100 3400
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5C003099
+P 1750 4750
+F 0 "T?" H 1750 5128 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 1750 5037 50  0000 C CNN
+F 2 "" H 1750 4750 50  0001 C CNN
+F 3 "~" H 1750 4750 50  0001 C CNN
+	1    1750 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
