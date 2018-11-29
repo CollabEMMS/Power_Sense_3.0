@@ -28,15 +28,15 @@ $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5AB00A66
-P 1050 5650
-F 0 "#PWR01" H 1050 5400 50  0001 C CNN
-F 1 "GND" H 1050 5500 50  0000 C CNN
-F 2 "" H 1050 5650 50  0001 C CNN
-F 3 "" H 1050 5650 50  0001 C CNN
-	1    1050 5650
+P 1050 6250
+F 0 "#PWR01" H 1050 6000 50  0001 C CNN
+F 1 "GND" H 1050 6100 50  0000 C CNN
+F 2 "" H 1050 6250 50  0001 C CNN
+F 3 "" H 1050 6250 50  0001 C CNN
+	1    1050 6250
 	1    0    0    -1  
 $EndComp
-Text Label 1050 5600 0    60   ~ 0
+Text Label 1050 6200 0    60   ~ 0
 GND
 $Comp
 L Device:C C6
@@ -152,9 +152,9 @@ F 3 "" H 8900 2650 50  0001 C CNN
 	1    8900 2700
 	1    0    0    -1  
 $EndComp
-Text Label 1050 4550 0    60   ~ 0
+Text Label 1000 4250 0    60   ~ 0
 H
-Text Label 1050 4950 0    60   ~ 0
+Text Label 1000 4650 0    60   ~ 0
 N
 $Comp
 L Device:R R8
@@ -170,12 +170,12 @@ $EndComp
 $Comp
 L Device:R R9
 U 1 1 5AB02FDE
-P 2950 5050
-F 0 "R9" V 3030 5050 50  0000 C CNN
-F 1 "1k" V 2950 5050 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2880 5050 50  0001 C CNN
-F 3 "" H 2950 5050 50  0001 C CNN
-	1    2950 5050
+P 2950 4750
+F 0 "R9" V 3030 4750 50  0000 C CNN
+F 1 "1k" V 2950 4750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2880 4750 50  0001 C CNN
+F 3 "" H 2950 4750 50  0001 C CNN
+	1    2950 4750
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -192,19 +192,19 @@ $EndComp
 $Comp
 L Device:C C4
 U 1 1 5AB030D7
-P 3200 5200
-F 0 "C4" H 3225 5300 50  0000 L CNN
-F 1 "100nF" H 3300 5200 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3238 5050 50  0001 C CNN
-F 3 "" H 3200 5200 50  0001 C CNN
-	1    3200 5200
+P 3200 4900
+F 0 "C4" H 3225 5000 50  0000 L CNN
+F 1 "100nF" H 3300 4900 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3238 4750 50  0001 C CNN
+F 3 "" H 3200 4900 50  0001 C CNN
+	1    3200 4900
 	1    0    0    -1  
 $EndComp
 Text Label 3200 3900 0    60   ~ 0
 GND
 Text Label 3200 4050 0    60   ~ 0
 GND
-Text Label 3200 5350 0    60   ~ 0
+Text Label 3200 5050 0    60   ~ 0
 GND
 Text Label 3200 2600 0    60   ~ 0
 GND
@@ -322,17 +322,17 @@ $EndComp
 $Comp
 L Power-Sense-3.0-rescue:Conn_01x02_Male J1
 U 1 1 5AB1B19B
-P 1650 5850
-F 0 "J1" H 1650 5950 50  0000 C CNN
-F 1 "Power" H 1650 5650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1650 5850 50  0001 C CNN
-F 3 "" H 1650 5850 50  0001 C CNN
-	1    1650 5850
+P 1650 6450
+F 0 "J1" H 1650 6550 50  0000 C CNN
+F 1 "Power" H 1650 6250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1650 6450 50  0001 C CNN
+F 3 "" H 1650 6450 50  0001 C CNN
+	1    1650 6450
 	0    -1   -1   0   
 $EndComp
-Text Label 1650 5450 0    60   ~ 0
+Text Label 1650 6050 0    60   ~ 0
 H
-Text Label 1750 5450 0    60   ~ 0
+Text Label 1750 6050 0    60   ~ 0
 N
 $Comp
 L Power-Sense-3.0-rescue:Conn_01x05_Male J2
@@ -423,28 +423,28 @@ $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5AB2D6B3
-P 2800 5700
-F 0 "D1" H 2800 5800 50  0000 C CNN
-F 1 "LED" H 2800 5600 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 2800 5700 50  0001 C CNN
-F 3 "" H 2800 5700 50  0001 C CNN
-	1    2800 5700
+P 2800 5750
+F 0 "D1" H 2800 5850 50  0000 C CNN
+F 1 "LED" H 2800 5650 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 2800 5750 50  0001 C CNN
+F 3 "" H 2800 5750 50  0001 C CNN
+	1    2800 5750
 	1    0    0    -1  
 $EndComp
-Text Label 2450 5700 2    60   ~ 0
+Text Label 2450 5750 2    60   ~ 0
 GND
 $Comp
 L Device:R R10
 U 1 1 5AB2E835
-P 3200 5700
-F 0 "R10" V 3280 5700 50  0000 C CNN
-F 1 "330" V 3200 5700 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3130 5700 50  0001 C CNN
-F 3 "" H 3200 5700 50  0001 C CNN
-	1    3200 5700
+P 3200 5750
+F 0 "R10" V 3280 5750 50  0000 C CNN
+F 1 "330" V 3200 5750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3130 5750 50  0001 C CNN
+F 3 "" H 3200 5750 50  0001 C CNN
+	1    3200 5750
 	0    -1   -1   0   
 $EndComp
-Text Label 3500 5700 0    60   ~ 0
+Text Label 3500 5750 0    60   ~ 0
 LED_TO_25
 Text Label 9900 2300 0    60   ~ 0
 LED_TO_25
@@ -481,7 +481,7 @@ NoConn ~ 8100 2000
 NoConn ~ 8100 1900
 NoConn ~ 9700 3000
 Wire Wire Line
-	1050 5650 1050 5450
+	1050 6250 1050 6050
 Wire Wire Line
 	4150 2650 4800 2650
 Wire Wire Line
@@ -518,20 +518,16 @@ Wire Wire Line
 Wire Wire Line
 	3200 3150 4800 3150
 Wire Wire Line
-	1150 4550 1050 4550
-Wire Wire Line
 	3100 4450 3200 4450
 Wire Wire Line
-	3100 5050 3200 5050
+	3100 4750 3200 4750
 Wire Wire Line
-	3650 3250 4800 3250
+	3650 3250 3750 3250
 Wire Wire Line
 	3650 4450 3650 3250
 Wire Wire Line
 	3750 3350 4800 3350
-Wire Wire Line
-	3750 5050 3750 3350
-Connection ~ 3200 5050
+Connection ~ 3200 4750
 Connection ~ 3200 4450
 Wire Wire Line
 	3200 4150 3200 4050
@@ -582,9 +578,9 @@ Wire Wire Line
 Connection ~ 7000 3150
 Connection ~ 7000 3450
 Wire Wire Line
-	1650 5650 1650 5450
+	1650 6250 1650 6050
 Wire Wire Line
-	1750 5650 1750 5450
+	1750 6250 1750 6050
 Wire Wire Line
 	4650 5500 4650 5300
 Wire Wire Line
@@ -652,13 +648,13 @@ Wire Wire Line
 	8700 3800 8800 3800
 Connection ~ 8800 3800
 Wire Wire Line
-	2950 5700 3050 5700
+	2950 5750 3050 5750
 Wire Wire Line
-	2650 5700 2450 5700
+	2650 5750 2450 5750
 Wire Wire Line
 	9900 2300 9700 2300
 Wire Wire Line
-	3500 5700 3350 5700
+	3500 5750 3350 5750
 Wire Wire Line
 	4150 2850 4800 2850
 Connection ~ 4150 2650
@@ -848,7 +844,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2900 2800 2900
 Wire Wire Line
-	3200 5050 3750 5050
+	3200 4750 3750 4750
 Wire Wire Line
 	3200 4450 3650 4450
 Wire Wire Line
@@ -876,18 +872,130 @@ Wire Wire Line
 Wire Wire Line
 	9750 2200 9900 2200
 Wire Wire Line
-	1050 4950 1150 4950
+	1000 4650 1100 4650
 Wire Wire Line
 	9700 3400 10100 3400
 $Comp
 L Device:Transformer_1P_1S T?
 U 1 1 5C003099
-P 1750 4750
-F 0 "T?" H 1750 5128 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 1750 5037 50  0000 C CNN
-F 2 "" H 1750 4750 50  0001 C CNN
-F 3 "~" H 1750 4750 50  0001 C CNN
-	1    1750 4750
+P 1600 4450
+F 0 "T?" H 1600 4828 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 1600 4737 50  0000 C CNN
+F 2 "" H 1600 4450 50  0001 C CNN
+F 3 "~" H 1600 4450 50  0001 C CNN
+	1    1600 4450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1150 4250 1150 4750
+Wire Wire Line
+	1000 4250 1150 4250
+Wire Wire Line
+	1200 4250 1150 4250
+Connection ~ 1150 4250
+Wire Wire Line
+	1200 4650 1100 4650
+Connection ~ 1100 4650
+$Comp
+L Device:R R?
+U 1 1 5C01C71E
+P 1400 4900
+F 0 "R?" H 1330 4854 50  0000 R CNN
+F 1 "536k" H 1330 4945 50  0000 R CNN
+F 2 "" V 1330 4900 50  0001 C CNN
+F 3 "~" H 1400 4900 50  0001 C CNN
+	1    1400 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C021CEE
+P 2150 4300
+F 0 "R?" H 2080 4254 50  0000 R CNN
+F 1 "10k 1%" H 2080 4345 50  0000 R CNN
+F 2 "" V 2080 4300 50  0001 C CNN
+F 3 "~" H 2150 4300 50  0001 C CNN
+	1    2150 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C02248A
+P 2150 4600
+F 0 "R?" H 2080 4554 50  0000 R CNN
+F 1 "1k" H 2080 4645 50  0000 R CNN
+F 2 "" V 2080 4600 50  0001 C CNN
+F 3 "~" H 2150 4600 50  0001 C CNN
+	1    2150 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 4750 3750 3350
+Wire Wire Line
+	2000 4250 2000 4150
+Wire Wire Line
+	2000 4150 2150 4150
+Connection ~ 3750 3250
+Wire Wire Line
+	3750 3250 4800 3250
+Connection ~ 3750 3350
+Wire Wire Line
+	3750 3350 3750 3250
+Wire Wire Line
+	2150 4500 2150 4450
+Connection ~ 2150 4450
+Wire Wire Line
+	2000 4650 2000 4750
+Wire Wire Line
+	2000 4750 2150 4750
+$Comp
+L Device:R R?
+U 1 1 5C06402E
+P 1400 5200
+F 0 "R?" H 1330 5154 50  0000 R CNN
+F 1 "1k" H 1330 5245 50  0000 R CNN
+F 2 "" V 1330 5200 50  0001 C CNN
+F 3 "~" H 1400 5200 50  0001 C CNN
+	1    1400 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 5350 1400 5350
+Wire Wire Line
+	1100 4650 1100 5350
+Wire Wire Line
+	1150 4750 1400 4750
+Wire Wire Line
+	1400 5050 2550 5050
+Connection ~ 1400 5050
+Wire Wire Line
+	1400 5350 1750 5350
+Wire Wire Line
+	1750 5350 1750 5150
+Wire Wire Line
+	1750 5150 2650 5150
+Connection ~ 1400 5350
+Wire Wire Line
+	1400 5350 1400 5450
+Wire Wire Line
+	2150 4750 2150 4850
+Connection ~ 2150 4750
+Text Label 1400 5450 0    60   ~ 0
+GND
+Text Label 2150 4850 0    60   ~ 0
+GND
+Wire Wire Line
+	2150 4450 2550 4450
+Wire Wire Line
+	2550 5050 2550 4450
+Connection ~ 2550 4450
+Wire Wire Line
+	2550 4450 2800 4450
+Wire Wire Line
+	2650 5150 2650 4750
+Wire Wire Line
+	2150 4750 2650 4750
+Connection ~ 2650 4750
+Wire Wire Line
+	2650 4750 2800 4750
 $EndSCHEMATC
