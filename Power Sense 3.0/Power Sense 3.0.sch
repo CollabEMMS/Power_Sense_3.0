@@ -150,9 +150,9 @@ F 3 "" H 8900 2650 50  0001 C CNN
 	1    8900 2700
 	1    0    0    -1  
 $EndComp
-Text Label 1000 4250 0    60   ~ 0
+Text Label 950  4050 0    60   ~ 0
 H
-Text Label 1000 4650 0    60   ~ 0
+Text Label 950  4700 0    60   ~ 0
 N
 $Comp
 L Device:R R8
@@ -378,7 +378,7 @@ U 1 1 5AB275FC
 P 6300 5700
 F 0 "J3" H 6300 6100 50  0000 C CNN
 F 1 "SPI" V 6200 5700 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 6300 5700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 6300 5700 50  0001 C CNN
 F 3 "" H 6300 5700 50  0001 C CNN
 	1    6300 5700
 	0    -1   -1   0   
@@ -517,8 +517,6 @@ Wire Wire Line
 	3100 4450 3200 4450
 Wire Wire Line
 	3100 4750 3200 4750
-Wire Wire Line
-	3650 3250 3750 3250
 Wire Wire Line
 	3650 4450 3650 3250
 Wire Wire Line
@@ -865,39 +863,21 @@ Wire Wire Line
 Wire Wire Line
 	9750 2200 9900 2200
 Wire Wire Line
-	1000 4650 1100 4650
+	950  4700 1050 4700
 Wire Wire Line
 	9700 3400 10100 3400
-$Comp
-L Device:Transformer_1P_1S T2
-U 1 1 5C003099
-P 1600 4450
-F 0 "T2" H 1600 4828 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 1600 4737 50  0000 C CNN
-F 2 "EMMS_FP:Transformer FS12-090-C2" H 1600 4450 50  0001 C CNN
-F 3 "~" H 1600 4450 50  0001 C CNN
-	1    1600 4450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1150 4250 1150 4750
-Wire Wire Line
-	1000 4250 1150 4250
-Wire Wire Line
-	1200 4250 1150 4250
-Connection ~ 1150 4250
-Wire Wire Line
-	1200 4650 1100 4650
-Connection ~ 1100 4650
+	1450 4700 1050 4700
+Connection ~ 1050 4700
 $Comp
 L Device:R R1
 U 1 1 5C01C71E
-P 1400 4900
-F 0 "R1" H 1330 4854 50  0000 R CNN
-F 1 "536k" H 1330 4945 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1330 4900 50  0001 C CNN
-F 3 "~" H 1400 4900 50  0001 C CNN
-	1    1400 4900
+P 1600 4900
+F 0 "R1" H 1530 4854 50  0000 R CNN
+F 1 "536k" H 1530 4945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1530 4900 50  0001 C CNN
+F 3 "~" H 1600 4900 50  0001 C CNN
+	1    1600 4900
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -925,55 +905,34 @@ $EndComp
 Wire Wire Line
 	3750 4750 3750 3350
 Wire Wire Line
-	2000 4250 2000 4150
+	1850 4050 2150 4050
 Wire Wire Line
-	2000 4150 2150 4150
-Connection ~ 3750 3250
-Wire Wire Line
-	3750 3250 4800 3250
-Connection ~ 3750 3350
-Wire Wire Line
-	3750 3350 3750 3250
+	2150 4050 2150 4150
 Wire Wire Line
 	2150 4500 2150 4450
 Connection ~ 2150 4450
-Wire Wire Line
-	2000 4650 2000 4750
 Wire Wire Line
 	2000 4750 2150 4750
 $Comp
 L Device:R R4
 U 1 1 5C06402E
-P 1400 5200
-F 0 "R4" H 1330 5154 50  0000 R CNN
-F 1 "1k" H 1330 5245 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1330 5200 50  0001 C CNN
-F 3 "~" H 1400 5200 50  0001 C CNN
-	1    1400 5200
+P 1600 5200
+F 0 "R4" H 1530 5154 50  0000 R CNN
+F 1 "1k" H 1530 5245 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1530 5200 50  0001 C CNN
+F 3 "~" H 1600 5200 50  0001 C CNN
+	1    1600 5200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1100 5350 1400 5350
+	1050 4700 1050 5350
 Wire Wire Line
-	1100 4650 1100 5350
-Wire Wire Line
-	1150 4750 1400 4750
-Wire Wire Line
-	1400 5050 2550 5050
-Connection ~ 1400 5050
-Wire Wire Line
-	1400 5350 1750 5350
-Wire Wire Line
-	1750 5350 1750 5150
-Wire Wire Line
-	1750 5150 2650 5150
-Connection ~ 1400 5350
-Wire Wire Line
-	1400 5350 1400 5450
+	1800 5350 1800 5150
+Connection ~ 1600 5350
 Wire Wire Line
 	2150 4750 2150 4850
 Connection ~ 2150 4750
-Text Label 1400 5450 0    60   ~ 0
+Text Label 1600 5450 0    60   ~ 0
 GND
 Text Label 2150 4850 0    60   ~ 0
 GND
@@ -1013,4 +972,108 @@ Text Label 750  6200 0    60   ~ 0
 +5V
 Text Label 4150 1900 0    60   ~ 0
 +5V
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5C0294C7
+P 7950 5700
+F 0 "J4" H 8000 6050 50  0000 R CNN
+F 1 "TestHeader" V 8050 5800 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7950 5700 50  0001 C CNN
+F 3 "~" H 7950 5700 50  0001 C CNN
+	1    7950 5700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7750 5500 7750 5300
+Wire Wire Line
+	7850 5500 7850 5300
+Wire Wire Line
+	7950 5500 7950 5300
+Wire Wire Line
+	8050 5500 8050 5300
+Wire Wire Line
+	8150 5500 8150 5300
+Wire Wire Line
+	8250 5500 8250 5300
+Text Label 8250 5300 1    60   ~ 0
+GND
+Text Label 7750 5300 1    60   ~ 0
+Fo0toPIC
+Text Label 7850 5300 1    60   ~ 0
+Fo1toPIC
+Text Label 7950 5300 1    60   ~ 0
+HFtoPIC
+Text Label 4400 3050 0    60   ~ 0
+CH0+
+Text Label 4400 3350 0    60   ~ 0
+CH1+
+Wire Wire Line
+	3650 3250 4800 3250
+$Comp
+L Device:R R24
+U 1 1 5C09C93D
+P 1300 5350
+F 0 "R24" V 1400 5350 50  0000 C CNN
+F 1 "0" V 1300 5350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1230 5350 50  0001 C CNN
+F 3 "~" H 1300 5350 50  0001 C CNN
+	1    1300 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5C0B30A6
+P 1300 4850
+F 0 "R20" V 1200 4850 50  0000 C CNN
+F 1 "0" V 1300 4850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1230 4850 50  0001 C CNN
+F 3 "~" H 1300 4850 50  0001 C CNN
+	1    1300 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L mylib:2p2sTransformer T2
+U 1 1 5C0C4786
+P 2250 4000
+F 0 "T2" H 1650 4197 60  0000 C CNN
+F 1 "2p2sTransformer" H 1650 4091 60  0000 C CNN
+F 2 "EMMS_FP:Transformer FS12-090-C2" H 2250 4700 60  0001 C CNN
+F 3 "" H 2250 4700 60  0001 C CNN
+	1    2250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4050 1150 4050
+Connection ~ 1150 4050
+Wire Wire Line
+	1150 4050 1450 4050
+Wire Wire Line
+	1450 4350 1450 4400
+Wire Wire Line
+	2000 4750 2000 4350
+Wire Wire Line
+	2000 4350 1850 4350
+Wire Wire Line
+	1800 5150 2650 5150
+Wire Wire Line
+	1600 5350 1800 5350
+Wire Wire Line
+	1600 5350 1600 5450
+Wire Wire Line
+	1150 4050 1150 4850
+Wire Wire Line
+	1050 5350 1150 5350
+Wire Wire Line
+	1450 5350 1600 5350
+Wire Wire Line
+	1450 4850 1450 4750
+Wire Wire Line
+	1450 4750 1600 4750
+Wire Wire Line
+	1600 5050 2550 5050
+Connection ~ 1600 5050
+Text Label 8150 5300 1    60   ~ 0
+CH0+
+Text Label 8050 5300 1    60   ~ 0
+CH1+
 $EndSCHEMATC
