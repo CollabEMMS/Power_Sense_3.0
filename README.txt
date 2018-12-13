@@ -1,4 +1,4 @@
-README.txt
+﻿README.txt
 Power Sense v3.1
 @author: Joe Wambach
 
@@ -12,3 +12,5 @@ Edits to be made in the future:
 	⁃ Change resistor values on transformer secondary. It currently uses 	10k and 1k to scale down by 11. This works for 120Vrms since 		transformer will output about 6Vp so MCP will get ~600mV. However, if 	240Vrms connect to primary coils, 12Vp comes out of secondary meaning 	MCP will see 1.2Vp which is > 660mV maximum rating.
 
 	- Fix silkscreen part numbers and values
+
+	- Fix trace connection to +5V of SPI because it barely touches it
