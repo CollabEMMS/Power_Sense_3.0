@@ -1075,5 +1075,7 @@ Connection ~ 1600 5050
 Text Label 8150 5300 1    60   ~ 0
 CH0+
 Text Label 8050 5300 1    60   ~ 0
-CH1+
+CH1-
+Text Label 4400 3250 0    60   ~ 0
+CH1-
 $EndSCHEMATC

@@ -997,10 +997,6 @@ Wire Wire Line
 	8250 5500 8250 5300
 Text Label 8250 5300 1    60   ~ 0
 GND
-Text Label 8050 5300 1    60   ~ 0
-CH0+
-Text Label 8150 5300 1    60   ~ 0
-CH1+
 Text Label 7750 5300 1    60   ~ 0
 Fo0toPIC
 Text Label 7850 5300 1    60   ~ 0
@@ -1076,4 +1072,8 @@ Wire Wire Line
 Wire Wire Line
 	1600 5050 2550 5050
 Connection ~ 1600 5050
+Text Label 8150 5300 1    60   ~ 0
+CH0+
+Text Label 8050 5300 1    60   ~ 0
+CH1+
 $EndSCHEMATC
