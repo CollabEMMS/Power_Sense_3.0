@@ -2,7 +2,18 @@
 Power Sense v3.1
 @author: Joe Wambach
 
-last edit: 12/6/18
+last edit to this document: 2/19/19
+
+Revision History:
+
+	3.0:	Initial version of new power sense
+	3.1: 	Removed Murata Transformer
+		Removed R1
+		Added Test Headers for CH0+, CH1+, HFout, Fout0, Fout1
+		Added Triad Transformer
+		Added Resistor Divider to bypass transformer circuitry
+	3.1.1:	Changed connection for test header from CH1+ to CH1-
+	3.2:	Removed R15 and R16
 
 Edits to be made in the future:
 	- Fix issue with test header for CH1. Either flip connections to filters so CH1- is connected to GND. OR just change the connection for the test header from CH1+ to CH1-.
