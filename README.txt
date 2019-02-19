@@ -16,3 +16,5 @@ Edits to be made in the future:
 
 	- Fix trace connection to +5V of SPI because it barely touches it 
 		DONE
+	
+	- Get rid of R16 and R15 because they prevent communication from working
