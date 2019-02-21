@@ -13,6 +13,7 @@ Revision History:
 		Added Triad Transformer
 		Added Resistor Divider to bypass transformer circuitry
 	3.1.1:	Changed connection for test header from CH1+ to CH1-
+		R5 --> 20k 1%
 	3.2:	Removed R15 and R16
 
 Edits to be made in the future:
