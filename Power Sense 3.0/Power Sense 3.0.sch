@@ -613,15 +613,11 @@ Wire Wire Line
 Wire Wire Line
 	6600 5500 6600 5300
 Wire Wire Line
-	9700 2200 9750 2200
-Wire Wire Line
 	8800 3700 8800 3800
 Wire Wire Line
 	8800 1500 8800 1600
 Wire Wire Line
 	9700 1900 9900 1900
-Wire Wire Line
-	9700 2000 9850 2000
 Wire Wire Line
 	9700 2100 9900 2100
 Wire Wire Line
@@ -669,27 +665,6 @@ Connection ~ 8800 1600
 Wire Wire Line
 	9350 1600 9450 1600
 Wire Wire Line
-	9850 1500 9850 2000
-Connection ~ 9850 2000
-$Comp
-L Device:R R16
-U 1 1 5AB4153A
-P 9850 1350
-F 0 "R16" V 9750 1350 50  0000 C CNN
-F 1 "10" V 9850 1350 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9780 1350 50  0001 C CNN
-F 3 "" H 9850 1350 50  0001 C CNN
-	1    9850 1350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9850 1200 9850 1100
-Text Label 9850 1100 0    60   ~ 0
-+5V
-Wire Wire Line
-	9750 1650 9750 2200
-Connection ~ 9750 2200
-Wire Wire Line
 	6500 3150 7000 3150
 Text Label 6300 3650 0    60   ~ 0
 MCP_CS_TO_PIC
@@ -725,21 +700,6 @@ GND
 Wire Wire Line
 	9700 3200 9800 3200
 NoConn ~ 6600 5500
-$Comp
-L Device:R R15
-U 1 1 5ABC818E
-P 9750 1500
-F 0 "R15" V 9650 1500 50  0000 C CNN
-F 1 "10" V 9750 1500 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9680 1500 50  0001 C CNN
-F 3 "" H 9750 1500 50  0001 C CNN
-	1    9750 1500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9750 1350 9750 1100
-Text Label 9750 1100 2    60   ~ 0
-+5V
 $Comp
 L Device:LED D2
 U 1 1 5ABCA984
@@ -858,10 +818,6 @@ Wire Wire Line
 	7600 3300 7600 3450
 Wire Wire Line
 	8800 1600 8800 1700
-Wire Wire Line
-	9850 2000 9900 2000
-Wire Wire Line
-	9750 2200 9900 2200
 Wire Wire Line
 	950  4700 1050 4700
 Wire Wire Line
@@ -1078,4 +1034,8 @@ Text Label 8050 5300 1    60   ~ 0
 CH1-
 Text Label 4400 3250 0    60   ~ 0
 CH1-
+Wire Wire Line
+	9700 2000 9900 2000
+Wire Wire Line
+	9700 2200 9900 2200
 $EndSCHEMATC
