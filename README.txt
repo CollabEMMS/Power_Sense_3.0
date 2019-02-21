@@ -1,8 +1,9 @@
 ﻿README.txt
-Power Sense v3.1
+Power Sense v3.1.2
 @author: Joe Wambach
+@LastEditor: Joe Wambach		<----------------------- UPDATE THIS WHOEVER LAST EDITS THIS
 
-last edit to this document: 2/19/19
+last edit to this document: 2/21/19
 
 Revision History:
 
@@ -32,4 +33,5 @@ Edits to be made in the future:
 		DONE
 	
 	- Get rid of R16 and R15 because they prevent communication from working
+		DONE
 
